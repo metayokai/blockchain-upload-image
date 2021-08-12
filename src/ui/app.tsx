@@ -217,15 +217,15 @@ export function App() {
             Deployed contract address: <b>{contract?.address || '-'}</b> <br />
             Deploy transaction hash: <b>{deployTxHash || '-'}</b>
             <br />
-        //    <br />
-        //    <h3>Transfer assets from the Ethereum blockchain via Force Bridge</h3>
-        //    Your Layer 2 Deposit Address on Layer 1: <b>{layer2Address}</b><br /><br />
-         //   Use the <a href="https://force-bridge-test.ckbapp.dev/bridge/Ethereum/Nervos">Force bridge website</a> to transfer tokens from Ethereum to Nervos layer 2.<br />
-        //    Select the Ethereum asset and amount to transfer across the bridge. In the box marked "Recipient", you will specify the Nervos destination address for the funds: input your the Layer 2 Deposit Address on Layer 1 mentioned above.<br />
-         //   When you have finished inputting and reviewing your selections, click the <i>Bridge</i> button. You will be asked to sign the transaction using MetaMask as seen below. There will be a small fee for the transfer, and this will be calculated automatically.<br />
-        //    <br />
-         //   Your SUDT balance: <b>{sudtBalance}</b><br />
-         //   <br />
+           <br />
+          <h3>Transfer assets from the Ethereum blockchain via Force Bridge</h3>
+           Your Layer 2 Deposit Address on Layer 1: <b>{layer2Address}</b><br /><br />
+           Use the <a href="https://force-bridge-test.ckbapp.dev/bridge/Ethereum/Nervos">Force bridge website</a> to transfer tokens from Ethereum to Nervos layer 2.<br />
+           Select the Ethereum asset and amount to transfer across the bridge. In the box marked "Recipient", you will specify the Nervos destination address for the funds: input your the Layer 2 Deposit Address on Layer 1 mentioned above.<br />
+          When you have finished inputting and reviewing your selections, click the <i>Bridge</i> button. You will be asked to sign the transaction using MetaMask as seen below. There will be a small fee for the transfer, and this will be calculated automatically.<br />
+           <br />
+            Your SUDT balance: <b>{sudtBalance}</b><br />
+          <br />
             <hr />
             <button onClick={deployContract} disabled={!l2Balance}>
                 Deploy contract
