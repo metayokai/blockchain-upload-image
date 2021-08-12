@@ -1,2 +1,1 @@
-# blockchain-upload-image
-Nervos blockchain-upload-image
+yarn && yarn build && yarn ui
